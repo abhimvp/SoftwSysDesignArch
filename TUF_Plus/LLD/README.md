@@ -35,3 +35,49 @@ There is a set of five principles for writing clean, scalable, maintainable obje
 - Dependency Inversion Principle (DIP): High-level modules should not depend on low-level modules. Both should depend on abstractions. Abstractions should not depend on details. Details should depend on abstractions.
   - High-Level Modules: The parts of your code that contain the core logic — the brains of your application. They make big decisions and coordinate how different features work together.Example: CEO (makes decisions, plans strategies).
   - Low-Level Modules: The ones that handle the details — like talking to a database, making API calls, reading files, or providing data. They support the high-level logic by doing the grunt work.Example: Employees (do the actual implementation, logistics, and execution).
+
+## UML - Unified Modeling Language
+
+- UML (Unified Modeling Language) is a standardized modeling language used to visualize, specify, construct, and document the structure and behavior of software systems.It provides a set of graphic notation techniques to create abstract models of systems, covering both static and dynamic aspects.
+- Think of UML as a toolkit of diagrams that helps software developers and designers map out how a system works, before or alongside writing the actual code. It's like planning a journey with a map — you get a clear picture of where everything is and how it all connects.
+- UML diagrams are divided into two main categories, each serving a different purpose in modeling software systems:
+
+1. Structural Diagrams - These describe the static structure of a system — what it contains, how different parts relate to each other, and how data is organized.
+
+2. Behavioral Diagrams - These describe the dynamic behavior of a system — how it behaves over time, how users interact with it, and how parts communicate during execution.
+
+- Different Structural Diagrams
+  There are seven main types of structural diagrams in UML, each serving a specific purpose in modeling the static aspects of a system:
+  `Class` Diagram: Shows classes, their properties, methods, and relationships — a map of the code structure.
+  Object Diagram: Shows a snapshot of instances of classes and their relationships at a specific point in time.
+  Component Diagram: Depicts how software components (modules) are organized and connected.
+  Composite Structure Diagram: Shows the internal parts of a class and how they interact to carry out behavior.
+  Deployment Diagram: Illustrates how software is physically deployed onto hardware devices or servers.
+  Package Diagram: Groups related elements (like classes) into packages for better organization.
+  Profile Diagram: Used to customize UML for specific platforms or domains by extending its elements.
+- Different Behavioral Diagrams
+  There are seven main types of behavioral diagrams in UML, each serving a specific purpose in modeling the dynamic aspects of a system:
+  Use Case Diagram: Captures what users (actors) can do with the system — its high-level functionalities.
+  Activity Diagram: Models workflows and business processes — similar to flowcharts.
+  Sequence Diagram: Shows the order of messages exchanged between objects over time.
+  Communication Diagram: Emphasizes interactions between objects and how they're connected.
+  State Machine Diagram: Depicts how an object transitions between states based on events.
+  Interaction Overview Diagram: Combines features of sequence and activity diagrams to model interaction flow.
+  Timing Diagram: Focuses on object behavior with respect to time, particularly useful for real-time systems.
+
+- `Note`: When diving into Low-Level Design, the focus is on the internal structure and detailed interaction of software components. While all UML diagrams have their place, the Class Diagram is considered the most important for mastering LLD. It provides a clear view of the classes, their attributes, methods, and relationships, making it essential for understanding how to design and implement software systems effectively.
+
+### Class UML Diagrams - is what matters
+
+A UML Class Diagram provides a high-level overview of the system architecture. It captures the system's classes, interfaces, enumerations, their attributes and operations (methods), and the relationships among them. It is instrumental in both forward and reverse engineering processes and is widely used in modeling object-oriented systems.
+
+- Looking at a class diagram, you must quickly be able to understand the system's structure and how different components interact with each other. This is particularly useful for new team members or stakeholders who need to get up to speed with the system's design regardless of understanding the underlying code.
+- `REFER Offline Notes`
+- Relationship Between Classes:
+  - Association (USE-A)
+  - Aggregation (HAS-A)
+  - Composition (Strong HAS-A)
+  - Inheritance
+  - Realization (Implementation)
+  - Dependency
+    ![alt text](image.png)

@@ -14,3 +14,6 @@ Run the compiled Java code: Now, you can run the compiled code. Type the followi
 
     $ java Basics
 ```
+
+- Encapsulation
+  - Data hiding

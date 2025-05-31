@@ -1,0 +1,14 @@
+from typing import List
+class Vehicle:
+    def __init__(self):
+        self._type = None  # Protected attribute (by convention)
+
+    def _displayType(self):  # Protected method (by convention)
+        print("Vehicle Type:", self._type)
+
+class Car(Vehicle):
+    def __init__(self):
+        super().__init__()
+        self._type = "Car"  # Accessible in the subclass
+
+

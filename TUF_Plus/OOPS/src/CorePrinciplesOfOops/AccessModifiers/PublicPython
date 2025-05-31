@@ -1,0 +1,14 @@
+from typing import List
+class Employee:
+    def __init__(self):
+        self.name = None  # Public attribute
+
+    def displayName(self):  # Public method
+        print("Employee Name:", self.name)
+
+if __name__ == "__main__":
+    emp = Employee()
+    emp.name = "Alice"  # Accessible globally
+    emp.displayName()   # Accessible globally
+
+

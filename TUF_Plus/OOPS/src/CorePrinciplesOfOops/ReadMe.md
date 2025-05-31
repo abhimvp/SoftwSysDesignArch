@@ -19,3 +19,16 @@ Getter and Setter Methods: The getBalance() and deposit() methods are public and
 Controlled Access: The deposit() method includes a check to ensure that only positive amounts are added to the balance, maintaining data integrity.
 -- 
 By encapsulating the BankAccount class, we make sure that the balance cannot be arbitrarily altered from outside the class, which protects it from unintended modifications and ensures proper validation is performed.
+
+## Access Modifiers/Specifiers
+
+Access modifiers in object-oriented programming are keywords that define the visibility and accessibility of classes, methods, variables, and other members of a program. They determine which parts of the program can interact with a particular component, ensuring that code adheres to encapsulation — a key principle of object-oriented programming.
+Access modifiers provide a controlled interaction between objects and help enforce good design practices, making programs more reliable, scalable, and easy to debug.
+
+Types of Access Modifiers
+Most of the Object Oriented Programming languages provide the following four access levels:
+
+Public: Accessible everywhere (within the same class, same package, and outside the package).
+Private: Accessible only within the class where it is declared.
+Protected: Accessible within the same package and by subclasses in other packages.
+Default: (No Modifier) Accessible within the same package (package-private).

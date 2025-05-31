@@ -1,0 +1,15 @@
+import java.util.*;
+public class Vehicle {
+    protected String type; // Protected attribute
+
+    protected void displayType() { // Protected method
+        System.out.println("Vehicle Type: " + type);
+    }
+}
+
+public class Car extends Vehicle {
+    public Car() {
+        this.type = "Car"; // Accessible in the subclass
+    }
+}
+

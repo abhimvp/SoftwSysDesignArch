@@ -1,0 +1,22 @@
+from typing import List
+class BankAccount:
+    def __init__(self):
+        self.__balance = 0  # Private attribute using name mangling
+
+    # Getter to provide controlled access
+    def getBalance(self):
+        return self.__balance
+
+    # Public method to deposit money
+    def deposit(self, amount):
+        if amount > 0:
+            self.__balance += amount
+
+if __name__ == "__main__":
+    # Creating an object
+    acnt = BankAccount()
+
+    # print(acnt.__balance)  #  Error: AttributeError: 'BankAccount' object has no attribute '__balance'
+    print(acnt.getBalance())
+
+

@@ -26,9 +26,12 @@ public class Arrays {
         };
         // printing the multidimensional array
         System.out.println("Multidimensional array:");
-        for (int i = 0; i < multiArr.length; i++) {
-            for (int j = 0; j < multiArr[i].length; j++) {
-                System.out.print(multiArr[i][j] + " ");
+        // The `for` loop in the provided Java code is used for iterating over the elements of an
+        // array. It is a control flow statement that allows you to execute a block of code repeatedly
+        // based on a condition.
+        for (int[] row : multiArr) {
+            for (int element : row) {
+                System.out.print(element + " ");
             }
             System.out.println(); // new line after each row
         }

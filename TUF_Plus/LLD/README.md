@@ -81,3 +81,37 @@ A UML Class Diagram provides a high-level overview of the system architecture. I
   - Realization (Implementation)
   - Dependency
     ![alt text](image.png)
+
+## Design Patterns
+
+- Design patterns are a foundational concept in software engineering, especially when building scalable and maintainable systems.Design patterns are standard, time-tested solutions to common software design problems. They are not code templates but abstract descriptions or blueprints that help developers solve issues in code architecture and system design.
+  - Design patterns help you avoid reinventing the wheel when facing recurring design challenges.
+- The Three Categories of Design Patterns:
+  - Creational Patterns
+  - Structural Patterns
+  - Behavioral Patterns
+
+### Creational Design Pattern
+
+- These focus on object creation mechanisms, trying to create objects in a manner suitable to the situation. They abstract the instantiation process, making the system independent of how its objects are created.
+
+- Real-World Analogy: Imagine ordering a drink at a vending machine. You press a button (say “Orange Juice”), and the machine internally figures out how to prepare it — whether to pour from a bottle, mix a concentrate, or use a fresh dispenser. You don't care how it's made — you just get your drink.
+- This is similar to the Factory Pattern, where the creation logic is hidden from the user and abstracted for flexibility.
+- Examples include:
+  - Singleton
+  - Factory Method
+  - Abstract Factory
+  - Builder
+  - Prototype
+
+#### Singleton Pattern
+
+- The Singleton Pattern ensures that a class has only one instance and provides a global point of access to that instance.
+
+```Code
+[Running] cd "c:\Users\abhis\Desktop\SoftwSysDesignArch\TUF_Plus\LLD\CreationalDesignPatterns\Singleton\" && javac Main.java && java Main
+JudgeAnalytics@76ed5528
+JudgeAnalytics@76ed5528
+
+-- we can see both objects are same , because we are trying to return same object anyone who is trying to access that class methods.
+```

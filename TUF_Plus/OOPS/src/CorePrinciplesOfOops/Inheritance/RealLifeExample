@@ -1,0 +1,49 @@
+import java.util.*;
+import java.util.*;
+
+// Parent class or super class
+class School {
+    // Private attribute for school name
+    private String name;
+
+    // Constructor initializes the school name
+    School() {
+        name = "DPS"; // Default school name
+    }
+
+    // Method to print the school name
+    void printSchoolName() {
+        System.out.println("School name: " + name);
+    }
+}
+
+// Subclass or child class
+class Student extends School {
+    // Private attribute for student name
+    private String name;
+
+    // Constructor initializes the student name
+    Student(String name) {
+        this.name = name;
+    }
+
+    // Method to print the student name
+    void printStudentName() {
+        System.out.println("Student name: " + name);
+    }
+}
+
+// Main class to execute the program
+class Main {
+    public static void main(String[] args) {
+        // Create a new student object with the name "Raj"
+        Student student = new Student("Raj");
+
+        // Print the student's name
+        student.printStudentName();
+
+        // Print the school's name
+        student.printSchoolName();
+    }
+}
+

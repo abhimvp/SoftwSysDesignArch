@@ -1,0 +1,32 @@
+from typing import List
+# Parent class or super class
+class School:
+    def __init__(self):
+        self.__name = "DPS"  # Private attribute for school name
+
+    # Method to print the school name
+    def printSchoolName(self):
+        print("School name:", self.__name)
+
+# Subclass or child class
+class Student(School):
+    def __init__(self, name):
+        super().__init__()
+        self.__name = name  # Private attribute for student name
+
+    # Method to print the student name
+    def printStudentName(self):
+        print("Student name:", self.__name)
+
+# Main execution
+if __name__ == "__main__":
+    # Create a new student object with the name "Raj"
+    student = Student("Raj")
+
+    # Print the student's name
+    student.printStudentName()
+
+    # Print the school's name
+    student.printSchoolName()
+
+

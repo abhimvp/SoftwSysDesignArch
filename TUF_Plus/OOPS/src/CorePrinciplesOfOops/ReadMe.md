@@ -14,11 +14,11 @@ Encapsulation is a fundamental concept in object-oriented programming (OOP) wher
 Flexibility and Maintenance: If the internal implementation needs to change, encapsulation allows you to modify the code without affecting external code. You can alter the internal representation of the data or how it's accessed, as long as the public interface (methods) remains the same.
 
 - Key Takeaways:
-Private Data: In the example above, the accountHolderName and balance attributes are private. This restricts direct access to the attributes from outside the class.
-Getter and Setter Methods: The getBalance() and deposit() methods are public and act as controlled interfaces to interact with the private data.
-Controlled Access: The deposit() method includes a check to ensure that only positive amounts are added to the balance, maintaining data integrity.
--- 
-By encapsulating the BankAccount class, we make sure that the balance cannot be arbitrarily altered from outside the class, which protects it from unintended modifications and ensures proper validation is performed.
+  Private Data: In the example above, the accountHolderName and balance attributes are private. This restricts direct access to the attributes from outside the class.
+  Getter and Setter Methods: The getBalance() and deposit() methods are public and act as controlled interfaces to interact with the private data.
+  Controlled Access: The deposit() method includes a check to ensure that only positive amounts are added to the balance, maintaining data integrity.
+  --
+  By encapsulating the BankAccount class, we make sure that the balance cannot be arbitrarily altered from outside the class, which protects it from unintended modifications and ensures proper validation is performed.
 
 ## Access Modifiers/Specifiers
 
@@ -32,3 +32,24 @@ Public: Accessible everywhere (within the same class, same package, and outside 
 Private: Accessible only within the class where it is declared.
 Protected: Accessible within the same package and by subclasses in other packages.
 Default: (No Modifier) Accessible within the same package (package-private).
+
+## Inheritance
+
+Inheritance is a fundamental concept in object-oriented programming (OOP) that allows a class (subclass) to inherit the attributes (fields) and behaviors (methods) of another class (superclass). It is the mechanism that promotes code reuse and establishes a hierarchical relationship between classes.
+In Java, this concept allows a subclass to inherit or extend the functionality of a superclass, enabling the subclass to reuse code and, in many cases, modify or add new behavior.
+
+Parent Class
+The parent class (also known as the superclass) is the class that provides common properties (attributes) and behaviors (methods) that are shared by one or more subclasses. It serves as a template or blueprint from which other classes (subclasses) can inherit. For example, School class.
+Subclass (Child Class)
+A subclass (also known as a child class) is a class that inherits from a parent class. The subclass can reuse, extend, or override the attributes and methods of the parent class to specialize or modify the inherited functionality. For example, Student class.
+
+Advantages of Using Inheritance
+Inheritance is a cornerstone of object-oriented programming, offering significant benefits such as:
+
+Reusability: It allows you to reuse the code of an existing class in a new class. Instead of rewriting code, the subclass (child class) can inherit the methods and attributes of the parent class. This reduces redundancy and promotes efficient coding.
+Modularity: It promotes a modular structure by separating concerns into different classes. Each class focuses on a specific part of the program, improving clarity and manageability.
+Extensibility: It enables adding new features or extending existing functionality without modifying the base class. This makes it easy to adapt to changing requirements.
+Maintainability: Inheritance makes code easier to maintain by centralizing common features in a parent class. Changes to shared functionality only need to be made in one place, reducing the risk of errors.
+
+Note
+Note that Java does not allow multiple inheritance using classes to avoid the diamond problem, it allows multiple inheritance through interfaces, as interfaces only declare method signatures (no method bodies initially), thus preventing conflicts.

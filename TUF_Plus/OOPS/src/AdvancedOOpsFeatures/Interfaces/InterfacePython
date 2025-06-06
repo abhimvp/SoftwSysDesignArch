@@ -1,0 +1,43 @@
+from typing import List
+from abc import ABC, abstractmethod
+
+# Interface
+class Animal(ABC):
+    @abstractmethod
+    def eat(self):
+        pass
+
+    @abstractmethod
+    def sleep(self):
+        pass
+
+# Implementing the interface
+class Dog(Animal):
+    def eat(self):
+        print("Dog eats bones.")
+
+    def sleep(self):
+        print("Dog sleeps in a kennel.")
+
+
+# a class that implements an interface can have its own constructors to initialize its objects.
+
+from typing import List
+from abc import ABC, abstractmethod
+
+# Interface
+class Vehicle(ABC):
+    @abstractmethod
+    def start(self):
+        pass
+
+# Car implements Vehicle
+class Car(Vehicle):
+    def __init__(self, brand):
+        self.__brand = brand
+
+    def start(self):
+        print(f"{self.__brand} car is starting.")
+
+
+

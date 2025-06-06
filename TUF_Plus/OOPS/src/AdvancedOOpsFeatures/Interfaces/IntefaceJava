@@ -1,0 +1,38 @@
+import java.util.*;
+interface Animal {
+    void eat();
+    void sleep();
+}
+
+class Dog implements Animal {
+    @Override
+    public void eat() {
+        System.out.println("Dog eats bones.");
+    }
+
+    @Override
+    public void sleep() {
+        System.out.println("Dog sleeps in a kennel.");
+    }
+}
+
+// a class that implements an interface can have its own constructors to initialize its objects.
+
+import java.util.*;
+interface Vehicle {
+    void start();
+}
+
+class Car implements Vehicle {
+    private String brand;
+
+    Car(String brand) {
+        this.brand = brand;
+    }
+
+    @Override
+    public void start() {
+        System.out.println(brand + " car is starting.");
+    }
+}
+

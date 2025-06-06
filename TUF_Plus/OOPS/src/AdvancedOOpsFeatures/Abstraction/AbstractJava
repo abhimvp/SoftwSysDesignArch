@@ -1,0 +1,81 @@
+<!-- An abstract class is a class that cannot be instantiated on its own and must be inherited by a subclass. It can have both abstract methods (without implementation) and concrete methods (with implementation).
+
+Abstract methods are those that are declared but not implemented in the abstract class, leaving the actual implementation to be provided by the subclasses. Consider the following code snippet: -->
+import java.util.*;
+// Abstract class
+abstract class Animal {
+    // Concrete method
+    void eat() {
+        System.out.println("This animal eats food.");
+    }
+
+    // Abstract method (no implementation)
+    abstract void sound();
+}
+
+// Concrete class that extends the abstract class
+class Dog extends Animal {
+    // Providing implementation for the abstract method
+    @Override
+    void sound() {
+        System.out.println("The dog barks.");
+    }
+}
+
+class Cat extends Animal {
+    // Providing implementation for the abstract method
+    @Override
+    void sound() {
+        System.out.println("The cat meows.");
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        Animal myDog = new Dog();
+        Animal myCat = new Cat();
+
+        myDog.eat();  // Inherited concrete method
+        myDog.sound(); // Overridden method in Dog class
+
+        myCat.eat();  // Inherited concrete method
+        myCat.sound(); // Overridden method in Cat class
+    }
+}
+
+<!-- python code -->
+
+from typing import List
+from abc import ABC, abstractmethod
+
+# Abstract class
+class Animal(ABC):
+    def eat(self):
+        print("This animal eats food.")
+
+    @abstractmethod
+    def sound(self):
+        pass
+
+# Concrete class Dog
+class Dog(Animal):
+    def sound(self):
+        print("The dog barks.")
+
+# Concrete class Cat
+class Cat(Animal):
+    def sound(self):
+        print("The cat meows.")
+
+# Main execution
+if __name__ == "__main__":
+    myDog = Dog()
+    myCat = Cat()
+
+    myDog.eat()    # Inherited concrete method
+    myDog.sound()  # Overridden abstract method
+
+    myCat.eat()    # Inherited concrete method
+    myCat.sound()  # Overridden abstract method
+
+
